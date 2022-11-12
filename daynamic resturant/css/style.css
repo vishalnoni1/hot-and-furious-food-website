@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap');
+
+/* Fonts */
+:root {
+  --font-default: "Open Sans", system-ui,Kanit -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: "Amatic SC", sans-serif;
+  --font-secondary: "Inter", sans-serif;
+}
+
+/* Colors */
+:root {
+  --color-default: #212529;
+  --color-primary: #ce1212;
+  --color-secondary: #2f2f35;
+}
+
+/* Smooth scroll behavior */
+:root {
+  scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+  # General
+  --------------------------------------------------------------*/
+body {
+  font-family: var(--font-default);
+  color: var(--color-default);
+}
+
+* {
+  text-transform: capitalize;
+  border: 0ch;
+  font-size: 15px;
+
+
+}
+
+/*--------------------------------------------------------------
+/*--------------------------------------------------------------
+# navbar
+--------------------------------------------------------------*/
+#logo::first-letter {
+  color: rgb(21, 2, 2);
+  font-size: 30px;
+  color: linear-gradient(to right, rgb(24, 3, 3), rgb(127, 52, 20));
+}
+
+
+a:hover {
+  color: #140a01;
+  transform: translateX;
+  transform-style: preserve-3d;
+}
+
+#nav {
+
+  color: antiquewhite;
+}
+
+button {
+
+  border-radius: 355px;
+  border: 2ex;
+  font-style: normal;
+  padding: 10px 20px;
+}
+
+#button:hover {
+  transition: all 2s;
+  cursor: pointer;
+  color: rgb(212, 187, 187);
+  transition-timing-function: ease-out;
+  transition-duration: 2s;
+  transition-delay:1ms;
+  transition-property: all;
+
+
+
+}
+
+li a {
+  color: white;
+  text-align: center;
+  transition-timing-function: ease-out;
+  transition-duration: 2s;
+  transition-delay:1ms;
+  transition-property: all;
+
+
+}
+
+#logo {
+  padding-left: 24px;
+  padding-right: 183px;
+  font-weight: 400;
+  font-size: 30px;
+  text-shadow: 3px 3px rgb(237, 102, 18);
+
+
+}
+
+
+
+
+
+.h2 {
+  font-size: 30px;
+  padding-bottom: 15px;
+  color: #ce1212;
+  padding-top: 15px;
+text-decoration: underline;
+font-family: 'Poppins', sans-serif;
+
+
+
+
+  text-align: center;
+
+
+
+
+
+  line-height: 35px;
+  font-weight: normal;
+
+  text-align: center;
+  text-shadow: 0 1px 1px rgb(219, 176, 186);
+
+}
+h2 {
+  font-size: 30px;
+  padding-bottom: 15px;
+  color: #ce1212;
+  padding-top: 15px;
+  font-family: 'Poppins', sans-serif;
+
+
+
+
+
+
+  text-align: center;
+
+
+
+
+
+  line-height: 35px;
+  font-weight: normal;
+
+  text-align: center;
+  text-shadow: 0 1px 1px rgb(219, 176, 186);
+
+}
+
+img {
+  height: fit-content;
+  position: relative;
+  top: 2%;
+  overflow: hidden
+}
+
+
+
+::-webkit-scrollbar {
+  width: 12px
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(223, 55, 9);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #041001);
+}
+
+#about img {
+  max-width: 600px;
+  height: auto;
+}
+
+
+#h3 {
+  font-size: x-large;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+p {
+  font-style: normal;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-wrap: break-word;
+  font-size: 15px;
+  font-style: monospace;
+  padding-bottom: 10px;
+
+}
+
+#icons {
+  border: 1px solid rgb(23, 1, 1);
+  box-shadow: 5px;
+  border-radius: 10px;
+
+  margin: 1vh;
+  flex-wrap: wrap;
+
+}
+
+#nav li a {
+  color: rgb(243, 236, 236);
+}
+#nav li a:hover {background-color: #140a01;}
+span {
+  display: flex;
+  justify-content: center;
+}
+
+#icons :hover {
+  border: 1px solid red;
+}
+
+#imgg img {
+  width: 40vw;
+  height: auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #e11b1b7f;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(126, 35, 35, 0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(215, 169, 169);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.blog-header {
+  line-height: 1;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 2.25rem;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+.display-4 {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .display-4 {
+      font-size: 3rem;
+  }
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-scroller .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+}
+
+.card-img-right {
+  height: 100%;
+  border-radius: 0 3px 3px 0;
+}
+
+.flex-auto {
+  flex: 0 0 auto;
+}
+
+.h-250 {
+  height: 250px;
+}
+
+@media (min-width: 768px) {
+  .h-md-250 {
+      height: 250px;
+  }
+}
+
+/* Pagination */
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+
+.blog-pagination>.btn {
+  border-radius: 2rem;
+}
+
+/*
+* Blog posts
+*/
+.blog-post {
+  margin-bottom: 4rem;
+}
+
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+}
+
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #727272;
+}
+
+/*
+* Footer
+*/
+.blog-footer {
+  padding: 2.5rem 0;
+  color: #727272;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+}
+
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+  background-color: #d32424;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+/* Add a blue color to the author */
+.author {
+  color: rgb(1, 9, 24);
+  ;
+}
+
+#testimonals img {
+  height: auto;
+  width: 20vw;
+  background-position: 50% 50%;
+  background-size: 20%;
+  background-repeat: no-repeat;
+  padding-bottom: 20px;
+  border-radius: 1000px;
+  cursor: pointer
+}
+
+#form img {
+  width: 30vw;
+}
+
+#form {
+  background: #eadfdf;
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  justify-content: space-evenly;
+}
+
+#btn {
+  border-radius: 1000px;
+  
+}
+
+#gallary img:hover {
+  transform: rotateX(45deg);
+  cursor: pointer;
+
+}
+
+#gallary {
+  border-radius: 7px;
+ 
+  box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.2);
+
+}
+
+#gimg img:hover {
+  cursor: pointer;
+  transform: rotateX(25deg);
+}
+
+#gallary img {
+  padding: 20px;
+  padding-top: 30px;
+}
+
+#gimg img {
+  width: 70vw;
+  height: auto;
+
+}
+
+#team img:hover {
+  cursor: pointer;
+  transform: rotateX(25deg);
+}
+#heroh { font-size: 30px;
+  padding-bottom: 15px;
+  color: #ce1212;
+  padding-top: 15px;
+padding-left: 25px;
+  font-family: 'Poppins', sans-serif;
+
+
+
+
+
+
+
+
+
+  line-height: 35px;
+  font-weight: normal;
+
+  text-align: center;
+  text-shadow: 0 1px 1px rgb(219, 176, 186);
+
+}
